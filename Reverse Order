@@ -1,0 +1,40 @@
+package selfProgramming;
+import java.util.Scanner;
+public class ReverseOrder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String name0, name1, name2, name3, name4;
+		int item0, item1, item2, item3, item4;
+		int sum;
+		
+		Scanner input = new Scanner (System.in);
+		
+		System.out.println("Customer name order");
+		
+		name0 = input.next();
+		name1 = input.next();
+		name2 = input.next();
+		name3 = input.next();
+		name4 = input.next();
+		
+		System.out.print(name0 + " " + name1 + " " + name2 + " " + name3 + " " + name4);
+		
+		item0 = input.nextInt();
+		item1 = input.nextInt();
+		item2 = input.nextInt();
+		item3 = input.nextInt();
+		item4 = input.nextInt();
+		
+		sum = item0 + item1 + item2 + item3 + item4;
+	        
+		System.out.println("The sum of the numbers = " + sum);
+		System.out.println("The numbers in reverse order are: ");
+		System.out.println(item4 + " " + item3 + " " + item2 + " " + item1 + " " + item0);
+		
+		input.close();
+		
+	}
+
+}
