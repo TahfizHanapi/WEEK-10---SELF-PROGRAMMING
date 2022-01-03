@@ -1,0 +1,41 @@
+package selfProgramming;
+import java.util.Scanner;
+public class Array4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int sum;
+		int[][] sales = new int [3][3];
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter sales per line");
+		
+		sum = 0;
+		for(int i=0; i<sales.length; i++)
+			for(int y=0; y<sales.length; y++) {
+				
+				sales[i][y] = sc.nextInt();
+				
+				sum = sum + sales[i][y];
+			}
+			
+		for(int i=0; i<sales.length; i++)
+			for(int y=0; y<sales.length; y++) 
+			{
+				
+				System.out.println("i = " + i + " y = " + y);
+				System.out.println("Value for sales is " + sales[i][y]);
+			}
+		
+		int avg = sum/sales.length;
+		System.out.println("Sum : " + sum);
+		System.out.print("Average: " + avg);
+				
+		sc.close();
+		
+
+	}
+
+}
